@@ -10,4 +10,3 @@ nav{margin-bottom: 30px;}
 .form {flex:2; order:3; background-color: blueviolet; border-radius: 1em;}
 .part1 {display: flex}
 .part1 {flex:2; order:3; background-color: #7fffd4; border-radius: 1em;}
-.clear {clear: both;}
