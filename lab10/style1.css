@@ -1,0 +1,13 @@
+@media only screen and (max-width:992px) {
+    nav a{
+        display: block
+    }
+    nav span{
+        display: none;
+    }
+}
+
+nav a{
+    justify-content: space-around;
+}
+

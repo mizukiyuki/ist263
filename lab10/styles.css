@@ -1,0 +1,8 @@
+body{background-color: #0000ff;color: #000000;}
+head{color: #0000ff;}
+a{color: #000000;}
+nav a:link{background-color: #9e2a2b;}
+nav a{color: #7fffd4;}
+nav a:hover{background-color: #ffe4c4;}
+nav{padding: 10px;}
+nav{margin-bottom: 30px;}
