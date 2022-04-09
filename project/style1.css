@@ -1,7 +1,7 @@
-nav a:link{background-color: #ff0000;
+nav a:link{background-color: purple;
             font-size: larger;
 }
-nav a{color: #000000;}
+nav a{color: yellow;}
 nav a:hover{background-color: #ffe4c4;}
 nav{padding: 10px;}
 nav{margin-bottom: 30px;}
@@ -17,13 +17,13 @@ body {background-color: #f8f8ff;}
             }
 
 footer{
-    background-color: cornflowerblue;
+    background-color: pink;
     padding:2em;
 }
     
            
 nav{
-    background-color: cornflowerblue;
+    background-color: pink;
     padding: 2em;
     }
 
