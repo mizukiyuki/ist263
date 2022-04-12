@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=divice-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style1.css">
+        <style>
+            div{border: 1px solid red}
+            h1{text-align: center;}
+            .Address{float:left;margin-right: 10px;}
+            h2{text-align: center;}
+            .link{float:right;margin: left 10px;}
+            .clear{clear: both;}
+            .form{flex-wrap: wrap;}
+            body{font-size: 2em;}
+            #skip{position:absolute; left: -999px; background-color: orange;}
+            #skip:focus{left:10px;}
+        </style>
+    </head>
+
+    <body>
+        <a id="skip" href="#maincontent">Skip to Content</a>
+        <nav>
+            <a href="index.html">Home</a><span>|</span>
+            <a href="skills.html">Skills</a><span>|</span>
+            <a href="contact.html">Contact</a><span>|</span>
+        </nav>
+        <section>
+        <h1>Contact</h1>
+        <a id="maincontent"></a>
+        <div class="part1">
+               <div class="Address">
+                   
+                        <h2>Address</h2>
+                        <p>Yuki Jiang<br>908 Harrison Street<br>Syracuse, NY, 13244</p>
+                </div>
+
+                <div class="link">
+                    <a href="mailto:yjiang54@syr.edu">Yuki Jiang Email</a><br>
+                    <img src="../images/logo-sized.png" alt="photo">
+                    <a href="https://www.linkedin.com/in/yifeijiang0711/">My Linkedin Profile</a><br>
+              </div>>
+         </div>>
+        
+        <div class="form">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.872936160084!2d-76.13772608467936!3d43.04410487914681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a11a1961ed%3A0xcfdd6ca24f43847f!2sSkyler%20Commons!5e0!3m2!1sen!2sus!4v1644099735948!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+                <form action="mailto:yjiang54@syr.edu" method="post">
+                    <label for="fullname">Enter Full Name:</label>
+                    <input type="text" id="fullname" name="fname"><br>
+
+                    <p>Do you want to contact me?</p>
+                    <input type="radio" id="want" name="1" Value="want">
+                    <label for="want">Want</label><br>
+                    <input type="radio" id="dwant" name="1" value="Don't want">
+                    <label for="dwant">Don't want</label><br>
+                    <label for="intention">Why you want to Contact Me?</label><br>
+                    <textarea id="intention" name="intention">Enter Your Intention Here</textarea><br>
+                    <input type="submit" value="send my intention">
+                </form>
+       </div>
+    </body>
+</html>

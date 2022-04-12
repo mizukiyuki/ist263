@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=divice-width, initial-scale=1.0">
+        <title>Skills</title>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+        table,th,td {border: 1px solid black;}
+        h1{text-align: center;}
+        img{width: 100px;}
+        .skills1{display:flex;}
+        .skills2{background-color:navy; color: white; border-radius: 25px;}
+        .flexbox{display: flex;}
+        .left{flex-basis: 75%;}
+        .right{flex-basis: 25%;}
+        .skills1{margin: 5em; padding:5px; justify-content: space-around;}
+        body{font-size: 2em;}
+        #skip{position:absolute; left: -999px; background-color: orange;}
+        #skip:focus{left:10px;}
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <a id="skip" href="#maincontent">Skip to Content</a>
+        <nav>
+            <a href="index.html">Home</a><span>|</span>
+            <a href="skills.html">Skills</a><span>|</span>
+            <a href="contact.html">Contact</a><span>|</span>
+        </nav>
+
+        <a id="maincontent"></a>
+        <section>
+        <h1>Technical Skills</h1>
+        <p>Aa a senior of iSchool, I am going to graduate this semester. I have learnt html, sql, python during my undergraduate learning.</p>
+       
+       
+       <div class="flexbox">
+           <div class="left">
+                <div class="skills1">
+                    <div><img src="../images/noun_python_1375869.png" alt="Python"><br>Python</div>
+                    <div><img src="../images/noun_sql_4147170.png" alt="Sql"><br>Sql</div>
+                    <div><img src="../images/noun_java_761630.png" alt="JAVA"><br>JAVA</div>
+                </div>
+            </div>>
+        
+
+            <div class="right">
+                <div class="skills2">
+                    <h2>Other Skills</h2>
+                
+                    <div>Window 10</div>
+                    <div>IOS</div>
+                    <div>Novels</div>
+                    <div>Poems</div>
+                    <div>Proses</div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
