@@ -1,0 +1,44 @@
+nav a:link{background-color: purple;
+            font-size: larger;
+}
+nav a{color: yellow;}
+nav a:hover{background-color: #ffe4c4;}
+nav{padding: 10px;}
+nav{margin-bottom: 30px;}
+body {background-color: #f8f8ff;}
+
+#skip{
+    position:absolute;/* relative to parent container*/
+    left: -999px;/* move if off the page*/
+    background-color: orange;
+        }
+#skip:focus{
+            left:10px;
+            }
+
+footer{
+    background-color: pink;
+    padding:2em;
+}
+    
+           
+nav{
+    background-color: pink;
+    padding: 2em;
+    }
+
+    @media only screen and (max-width:992px) {
+        nav a{
+            display: block;
+        }
+        nav span{
+            display: none;
+        }
+
+        nav a:link{
+            padding: 15px;
+        }
+    }
+
+
+

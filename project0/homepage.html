@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Travel with Yuki</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .yuki{display: block; margin:0 auto; text-align: center; max-width: 100%;}
+        .drinks{max-width: 100%; flex-basis: 50%; margin-left: 1em;}
+        .homepage{display: block; margin:0 auto; text-align: center; max-width: 100%;}
+        h1{text-align: center;}
+        .row1{display: flex; margin: 0 auto;}
+        .p1{margin: 2em;}
+        .row2{display: flex; margin: 0 auto;}
+        .p2{margin: 2em;}
+        .row3{display: flex; margin: 0 auto;}
+        .p3{margin: 2em;}
+        .row4{display: flex; margin: 0 auto;}
+        @media only screen and (max-width:992px) {.p1,.p2,.p3{margin-left: 5em;}#yuki{width: 900px;}}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="homepage.html">Home</a><span>|</span>
+        <a href="gallery.html">Gallery</a><span>|</span>
+        <a href="milestones.html">Milestones</a><span>|</span>
+    </nav>
+
+    <div class="container">
+        <h1>Travel with Yuki</h1>
+        <div class="yuki"><img src="../images/yuki.png" alt="yuki" id="yuki"></div>
+        <a id="maincontent"></a>
+    
+        <div class="row1">
+            <div class="p1"><p>My name is Yuki Jiang, a senior student in Syracuse University majoring in Broadcast&Digital Journalism and IT&M. I have a number of hobbies and traveling is one of them. While traveling, I like taking photos in order to keep them into memories.</p></div>
+        </div>
+
+        <div class="row2">
+            <div class="drinks"><img src="../images/drinks.jpg"    alt="drinks" id="drinks"></div>
+            <div class="p2"><p>In the past few months, I have travelled both nationally and internationally. COVID never stopped my passion of exploring the world!</p></div>
+        </div>
+
+        <div class="row3">
+            <div class="p3"><p>Every trip is a special experience in my life, not only the beautiful sights, but also the feelings and stories behind. I picked several striking highlights during my trips in the gallery. Let's take a look.</p></div>
+        </div>
+        
+        <div class="row4">
+            <div class="homepage"><img src="../images/homepage.png"   alt="homepage" id="homepage"></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <form action="mailto:yjiang54@syr.edu" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <label for="Name">Name:</label><br>
+        <input type="text" size="19" name="Name" id="Name"><br><br>
+        <label for="Message">Message:</label><br>
+        <textarea name="Message" id="Message" rows="6" cols="20" >Would you like to know more about my trips?
+        </textarea><br><br>
+        <button type="submit" value="submit">Send</button>
+    </form>
+
+    <footer>
+        <hr>
+        <div class="copyright">
+        &copy;2022      
+        <p>Flower Road</p>
+        </div>  
+    </footer>
+</body>
+</html>
