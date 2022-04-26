@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photos</title>
+    <link rel="stylesheet" href="style1.css">
+
+    <style>
+        #slideshow-container {
+            width: 1200px;
+            margin: auto; /* margin auto is centering this container */        
+        }
+        #bigimages {
+            padding-top: 100px;
+            margin-right: 100px;
+            float: left;
+        }
+        #PR1,#AS1,#BJ1{
+            width: 500px;
+            max-width: 100%;
+        }
+        #playerinfo {padding: 100px;}
+        #thumbnails {width: 1200px; margin: auto; padding-top: 20px;} 
+        /* ^^ margin auto is centering this container */
+        #PR1thumb,#SA1thumb,#BJ1thumb
+        {width: 100px;
+        max-width: 100%;
+        }
+
+        #PR1,#SA1,#BJ1{
+            display: none;
+        }
+        #PR1info,#SA1info,#BJ1info{
+            display: none;
+        }
+        .clear{clear: both;}
+        body{font-size: 1.5em;}
+
+        @media only screen and (max-width:992px) {
+        #slideshow-container{
+            width: 700px;
+        }
+
+        #thumbnails{
+            width:700px;
+        }
+        
+    }
+
+
+       
+
+    </style>
+
+    <script>
+        function PlayersOff() {
+            document.getElementById("PR1").style.display="none";
+            document.getElementById("SA1").style.display="none";
+            document.getElementById("BJ1").style.display="none";
+
+            document.getElementById("PR1info").style.display="none";
+            document.getElementById("SA1info").style.display="none";
+            document.getElementById("BJ1info").style.display="none";
+        }
+
+        function PR1On () {
+            document.getElementById("PR1").style.display="block";
+            document.getElementById("PR1info").style.display="block";
+        }
+
+        function SA1On () {
+            document.getElementById("SA1").style.display="block";
+            document.getElementById("SA1info").style.display="block";
+        }
+
+        function BJ1On () {
+            document.getElementById("BJ1").style.display="block";
+            document.getElementById("BJ1info").style.display="block";
+        }
+
+    </script>
+</head>
+<body>
+    <a id="skip" href="#maincontent">Skip to Content</a>
+    <nav>
+        <a href="homepage.html">Home</a><span>|</span>
+        <a href="gallery.html">Gallery</a><span>|</span>
+        <a href="milestones.html">Milestones</a><span>|</span>
+    </nav>
+
+    <a id="maincontent"></a>
+
+
+    <div id="slideshow-container">
+        <div id="bigimages">
+            <img src="../images/PR1.jpg" alt="PR1" id="PR1">
+            <img src="../images/SA1.jpg" alt="SA1" id="SA1">
+            <img src="../images/PR1.jpg" alt="BJ1" id="BJ1">
+
+        </div>
+
+
+
+        <div id="playerinfo">
+            <h1>Gallery</h1>
+            <div id="PR1info">
+                <h2>Puerto Rico</h2>
+                <p>Wu Lei, born on November 19, 1991 in Nanjing, Jiangsu Province, is a Chinese football player and striker. He currently plays for Real Espanyol in Spain's First Division.</p>
+            </div>
+
+            <div id="SA1info">
+                <h2>San Antonio</h2>
+                <p>Wang Shenchao, born on February 8, 1989 in Shanghai, is a Chinese football player. He is a full-back and plays for Shanghai SIPG football Club.</p>
+            </div>
+
+            <div id="BJ1info">
+                <h2>Beijing</h2>
+                <p>Wei Shihao, born on April 8, 1995 in Bengbu, Anhui Province, China, is a Chinese football player and striker who plays for Guangzhou FOOTBALL Club.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+
+
+
+
+        <div id="thumbnails">
+            <img src="../images/PR1.jpg" alt="PR1" id="wlthumb" onclick="PlayersOff(); PR1On();">
+            <img src="../images/SA1.jpg" alt="SA1" id="wscthumb" onclick="PlayersOff(); SA1On();">
+            <img src="../images/BJ1.jpg" alt="BJ1" id="wshthumb" onclick="PlayersOff(); BJ1On();">
+        </div>
+
+    </div>
+
+
+    <footer>
+        <hr>
+        <div class="copyright">
+        &copy;2022
+        
+        <p>Flower Road</p>
+        </div>
+    </footer>
+</body>
+</html>
