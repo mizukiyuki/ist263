@@ -7,8 +7,7 @@
 
     <style>
         #slideshow-container {
-            width: 1200px;
-            margin: auto; /* margin auto is centering this container */        
+            width: 1200px;   
         }
         #bigimages {
             padding-top: 100px;
@@ -19,9 +18,8 @@
             width: 500px;
             max-width: 100%;
         }
-        #playerinfo {padding: 100px;}
+        #galleryinfo {padding: 100px;}
         #thumbnails {width: 1200px; margin: auto; padding-top: 20px;} 
-        /* ^^ margin auto is centering this container */
         #PR1thumb,#SA1thumb,#BJ1thumb
         {width: 100px;
         max-width: 100%;
@@ -47,13 +45,10 @@
         
     }
 
-
-       
-
     </style>
 
     <script>
-        function PlayersOff() {
+        function PhotosOff() {
             document.getElementById("PR1").style.display="none";
             document.getElementById("SA1").style.display="none";
             document.getElementById("BJ1").style.display="none";
@@ -99,39 +94,29 @@
 
         </div>
 
-
-
-        <div id="playerinfo">
+        <div id="galleryinfo">
             <h1>Gallery</h1>
             <div id="PR1info">
                 <h2>Puerto Rico</h2>
-                <p>Wu Lei, born on November 19, 1991 in Nanjing, Jiangsu Province, is a Chinese football player and striker. He currently plays for Real Espanyol in Spain's First Division.</p>
             </div>
 
             <div id="SA1info">
                 <h2>San Antonio</h2>
-                <p>Wang Shenchao, born on February 8, 1989 in Shanghai, is a Chinese football player. He is a full-back and plays for Shanghai SIPG football Club.</p>
             </div>
 
             <div id="BJ1info">
                 <h2>Beijing</h2>
-                <p>Wei Shihao, born on April 8, 1995 in Bengbu, Anhui Province, China, is a Chinese football player and striker who plays for Guangzhou FOOTBALL Club.</p>
             </div>
             <div class="clear"></div>
         </div>
 
-
-
-
-
         <div id="thumbnails">
-            <img src="../images/PR1.jpg" alt="PR1" id="wlthumb" onclick="PlayersOff(); PR1On();">
-            <img src="../images/SA1.jpg" alt="SA1" id="wscthumb" onclick="PlayersOff(); SA1On();">
-            <img src="../images/BJ1.jpg" alt="BJ1" id="wshthumb" onclick="PlayersOff(); BJ1On();">
+            <img src="../images/PR1.jpg" alt="PR1" id="wlthumb" onclick="PhotosOff(); PR1On();">
+            <img src="../images/SA1.jpg" alt="SA1" id="wscthumb" onclick="PhotosOff(); SA1On();">
+            <img src="../images/BJ1.jpg" alt="BJ1" id="wshthumb" onclick="PhotosOff(); BJ1On();">
         </div>
 
     </div>
-
 
     <footer>
         <hr>
